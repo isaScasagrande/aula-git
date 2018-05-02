@@ -7,18 +7,28 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.menuController">
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.menuController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TextField fx:id="txtResultado" layoutX="27.0" layoutY="151.0" />
-      <Label layoutX="27.0" layoutY="14.0" text="Numero 1" />
-      <Label layoutX="27.0" layoutY="68.0" text="Numero 2" />
-      <Label layoutX="27.0" layoutY="120.0" text="Resultado" />
-      <Button fx:id="btnSoma" layoutX="234.0" layoutY="37.0" mnemonicParsing="false" onAction="#soma" prefHeight="25.0" prefWidth="68.0" text="Soma" />
-      <TextField fx:id="txtNum1" layoutX="27.0" layoutY="37.0" />
-      <TextField fx:id="textNum2" layoutX="27.0" layoutY="88.0" />
-      <Button fx:id="btnSubtrai" layoutX="234.0" layoutY="73.0" mnemonicParsing="false" onAction="#subtrai" prefHeight="25.0" prefWidth="68.0" text="Subtrai" />
-      <Button fx:id="btnDivide" layoutX="235.0" layoutY="108.0" mnemonicParsing="false" onAction="#divide" prefHeight="25.0" prefWidth="68.0" text="Divide" />
-      <Button fx:id="btnMultiplica" layoutX="235.0" layoutY="145.0" mnemonicParsing="false" onAction="#multiplica" text="Multiplica" />
+      <TextField fx:id="txtResultado" layoutX="14.0" layoutY="257.0" />
+      <Label layoutX="27.0" layoutY="65.0" text="Numero 1" />
+      <Label layoutX="27.0" layoutY="120.0" text="Numero 2" />
+      <Label layoutX="21.0" layoutY="219.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="242.0" layoutY="99.0" mnemonicParsing="false" onAction="#soma" prefHeight="25.0" prefWidth="68.0" text="Soma" />
+      <TextField fx:id="txtNum1" layoutX="27.0" layoutY="86.0" />
+      <TextField fx:id="textNum2" layoutX="27.0" layoutY="158.0" />
+      <Button fx:id="btnSubtrai" layoutX="235.0" layoutY="158.0" mnemonicParsing="false" onAction="#subtrai" prefHeight="25.0" prefWidth="68.0" text="Subtrai" />
+      <Button fx:id="btnDivide" layoutX="234.0" layoutY="207.0" mnemonicParsing="false" onAction="#divide" prefHeight="25.0" prefWidth="68.0" text="Divide" />
+      <Button fx:id="btnMultiplica" layoutX="235.0" layoutY="257.0" mnemonicParsing="false" onAction="#multiplica" text="Multiplica" />
+      <MenuBar layoutX="17.0" layoutY="14.0" prefHeight="25.0" prefWidth="482.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Cadastros">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#FecharCadastroAluno" text="Fechar" />
+              <MenuItem mnemonicParsing="false" text="Aluno" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>

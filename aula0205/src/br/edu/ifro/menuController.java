@@ -78,5 +78,13 @@ public class menuController implements Initializable {
     
         // TODO
     }    
+
+    @FXML
+    private void FecharCadastroAluno(ActionEvent event) {
+    }
+
+    @FXML
+    private void abrirCadastroAluno(ActionEvent event) {
+    }
     
 }
